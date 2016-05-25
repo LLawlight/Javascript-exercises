@@ -1,25 +1,63 @@
-# 各大互联网公司JavaScript笔试面试题
-
-原文出处：[http://www.cnblogs.com/coco1s/p/4029708.html](http://www.cnblogs.com/coco1s/p/4029708.html)
-
 ## 初级Javascript：
 
 #### 1.JavaScript是一门什么样的语言，它有哪些特点？
 
+**没有标准答案。**   
+
+我的答案：   
+JavaScript是一门强大的编程语言，是一种专为与网页交互而设计的脚本语言，是一种动态类型、弱类型、基于原型的语言。   
+
+特点：   
+
+1. 脚本语言。JavaScript是一种解释型的脚本语言,C、C++等语言先编译后执行,而JavaScript是在程序的运行过程中逐行进行解释。   
+1. 基于对象。JavaScript是一种基于对象的脚本语言,它不仅可以创建对象,也能使用现有的对象。   
+1. 简单。JavaScript语言中采用的是弱类型的变量类型,对使用的数据类型未做出严格的要求,是基于Java基本语句和控制的脚本语言,其设计简单紧凑。   
+1. 动态性。JavaScript是一种采用事件驱动的脚本语言,它不需要经过Web服务器就可以对用户的输入做出响应。在访问一个网页时,鼠标在网页中进行鼠标点击或上下移、窗口移动等操作JavaScript都可直接对这些事件给出相应的响应。   
+1. 跨平台性。JavaScript脚本语言不依赖于操作系统,仅需要浏览器的支持。因此一个JavaScript脚本在编写后可以带到任意机器上使用,前提上机器上的浏览器支 持JavaScript脚本语言,目前JavaScript已被大多数的浏览器所支持。
+
 #### 2.JavaScript的数据类型都有什么？
+
+- 基本数据类型：Number、String、Boolean、Null、Undefined   
+- 复杂数据类型：Object（Function、Array、Date、RegExp）
+
 
 **如何判断某变量是否为数组数据类型？**
 
+    if (typeof Array.isArray === "undefined"){
+    	Array.isArray = function(arg){
+    		return Object.prototype.toString.call(arg)==="[object Array]";
+    	}
+    }
+
+
 #### 3.已知ID的Input输入框，希望获取这个输入框的输入值，怎么做？(不使用第三方框架)
+
+    document.getElementById(ID).value;
 
 #### 4.希望获取到页面中所有的checkbox怎么做？(不使用第三方框架)
 
-#### 5.设置一个已知ID的DIV的html内容为xxxx，字体颜色设置为黑色(不使用第三方框架)
+    var inputs = document.getElementsByTagName("input"),
+    	arr = [],
+		len = inputs.length;
+    while (len--){
+    	if(inputs[len].type == "checkbox"){
+    		arr.push(inputs[i]);
+    	}
+    }
 
+#### 5.设置一个已知ID的DIV的html内容为xxxx，字体颜色设置为黑色(不使用第三方框架)
+	var oDiv = document.getElementById(ID);
+    oDiv.innerHTML = "xxxx";
+    oDiv.getElementById(ID).style.color = "black";
 
 #### 6.当一个DOM节点被点击时候，我们希望能够执行一个函数，应该怎么做？
 
+先获取到这个DOM节点，然后绑定onclick事件。比如`myDOM.onclick = fn`或者`myDOM.addEventListener("click",fn);`   
+
+或者直接在HTML中绑定`<div onclick = "fn()"></div>`
+
 #### 7.什么是Ajax和JSON，它们的优缺点。
+
 
 #### 8.看下列代码输出为何？解释原因。
 
