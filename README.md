@@ -102,7 +102,7 @@ JavaScript是一门强大的编程语言，是一种专为与网页交互而设�
 
 #### 21.怎样添加、移除、移动、复制、创建和查找节点
 
-#### 22.有这样一个URL：http://item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e,请写一段JS程序提取URL中的各个GET参数(参数名和参数个数不确定)，将其按key-value形式返回到一个json结构中，如{a:’1′, b:’2′, c:”, d:’xxx’, e:undefined}。
+#### 22.有这样一个URL：`http://item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e`，请写一段JS程序提取URL中的各个GET参数(参数名和参数个数不确定)，将其按key-value形式返回到一个json结构中，如{a:’1′, b:’2′, c:”, d:’xxx’, e:undefined}。
 
 #### 23.正则表达式构造函数var reg=new RegExp(“xxx”)与正则表达字面量var reg=//有什么不同？匹配邮箱的正则表达式？
 
