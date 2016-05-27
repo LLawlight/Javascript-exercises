@@ -1,8 +1,9 @@
 # 各大互联网公司JavaScript笔试面试题
 
-原文出处：[http://www.cnblogs.com/coco1s/p/4029708.html](http://www.cnblogs.com/coco1s/p/4029708.html)
+原文出处：[http://www.cnblogs.com/coco1s/p/4029708.html](http://www.cnblogs.com/coco1s/p/4029708.html)   
+部分略有错误，稍作修改。
 
-## 初级Javascript：
+## 初级Javascript：[(参考答案)](https://github.com/Clark-Zhao/Javascript-exercises/blob/master/%E5%88%9D%E7%BA%A7JavaScript%E7%AD%94%E6%A1%88.md)
 
 #### 1.JavaScript是一门什么样的语言，它有哪些特点？
 
@@ -101,8 +102,10 @@
       },0);  
     };
 
+**如何让上述代码输出1 2 3？**
+
 #### 25.写一个function，清除字符串前后的空格。（兼容所有浏览器）
 
 #### 26.Javascript中callee和caller的作用？
 
-**如果一对兔子每月生一对兔子；一对新生兔，从第二个月起就开始生兔子；假定每对兔子都是一雌一雄，试问一对兔子，第n个月能繁殖成多少对兔子？（使用callee完成）**
+**如果一对兔子每月生一对兔子；一对新生兔，从第三个月起就开始生兔子；假定每对兔子都是一雌一雄，试问一对兔子，第n个月能繁殖成多少对兔子？（使用callee完成）**
